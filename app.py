@@ -6,6 +6,9 @@ app = Flask(__name__)
 def hello():
     return render_template('home.html')
 
+@app.route('/world')
+def world():
+    return 'hello world'
 
 if __name__ == '__main__':
     app.debug = True
